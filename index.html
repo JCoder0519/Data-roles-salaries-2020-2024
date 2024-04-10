@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Project Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Exploring the Potential Determinants and Trend of Salary in Data-Related Roles from 2020-2024</h1>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>
+                The field of data-related roles has experienced significant growth and evolution over the past few years, with a surge in demand for professionals skilled in data analysis, data science, machine learning, and other related domains. As organizations across various industries continue to recognize the value of data-driven decision-making, the demand for skilled data professionals has led to increased competition and scrutiny regarding salaries and compensation packages within this sector.
+
+                In this project, I aim to explore the potential determinants and trends of salaries in data-related roles from 2020 to 2024. Specifically, I will address four key tasks:
+                
+                <ul>
+                    <li>
+                      <h3>Task 1: Understanding Data Jobs Salary Trend from 2020-2024</h3>
+                      <p>Analyze the salary trends in data-related roles over the past five years to identify any notable patterns, fluctuations, or overall growth in compensation within the industry. By examining salary data from 2020 to 2024, we seek to gain insights into the trajectory of salaries for data professionals during this period.</p>
+                    </li>
+                    <li>
+                      <h3>Task 2: Exploring the Impact of Employment Type on Salary</h3>
+                      <p>Investigate the impact of employment type (such as full-time, part-time, contract, or freelance) on salary levels within the data-related sector. By comparing salaries across different employment types, we aim to discern whether certain types of employment arrangements are associated with higher or lower compensation for data professionals.</p>
+                    </li>
+                    <li>
+                      <h3>Task 3: Exploring the Impact of Experience Level & Company Size on Salary</h3>
+                      <p>Examine how experience level and company size influence salary levels within the data-related industry. By analyzing salary data based on experience levels (such as entry-level, mid-level, senior-level) and company sizes (small, medium, large), we aim to identify any correlations or trends between these factors and salary levels.</p>
+                    </li>
+                    <li>
+                      <h3>Task 4: Exploring the Median Salary of the Top 20 Most Common Jobs</h3>
+                      <p>Focus on the top 20 most common job titles within the data-related sector and explore the median salary for each of these positions. By examining salary data for the most prevalent job titles, we aim to provide insights into the typical compensation levels for various roles within the data industry.</p>
+                    </li>
+                    <h3>Task 5: Explore Salary Information by Country</h3>
+                      <p>Investigate salary information by country to understand how compensation varies geographically in the data-related roles.</p>
+                  </ul>
+                
+                Through these analyses, we aim to provide valuable insights into the salary dynamics within the data-related sector, helping professionals, employers, and policymakers better understand the factors influencing compensation trends and make informed decisions regarding hiring, compensation packages, and career development strategies within this rapidly evolving field.</p>
+        </section>
+
+        <section id="data-visualization">
+            <h2>Visualizations for Exploratory Data Analysis(EDA)</h2>
+            <figure>
+                <img src="dataset.png" alt="Overall Data Visualization">
+                <h2>Data Introduction</h2>
+                <p>
+                    The dataset that I am going to use for this project is called “Latest_Data_Science_Salaries” downloaded from Kaggle.com. It is a 646KB csv file that contains the following 11 attributes: Employment Type, Experience Level, Expertise Level, Salary, Salary Currency, Company Location, Salary in USD, Employee Residence, Company Size, and Year. The dataset has 5736 observations in total which is a relatively sufficient amount for my analysis. The dataset provides valuable insights into the compensation trends and variations in the field of data science from 2020 to 2024 and its breadth allows for a comprehensive analysis of salary determinants across different market segments.
+                </p>
+                <h1>EDA Visualizations</h1>
+                <img src="Top30.png" alt="Overall Data Visualization">
+                <img src="barchart.png" alt="Overall Data Visualization">
+                <img src="pie.png" alt="Overall Data Visualization">
+                
+            </figure>
+        </section>
+
+        <section id="static-visualizations">
+            <h2>Task 1: Understanding Data Jobs Salary Trend from 2020-2024</h2>
+            <!-- Repeat this block for each static visualization -->
+            <figure>
+                <img src="Trend_excluding_2024.png" alt="Visualization Title">
+                <figcaption><strong>Visualization takeaway:</strong>This visualization presents the salary trends for data-related jobs from 2020 to 2023(2024 was excluded because there is only available observation for medium size company but not the two other sizes), differentiated by company size: small, medium, and large. The key takeaway is that salary trends vary significantly with company size. Salaries in medium-sized companies have shown a strong upward trend, surpassing both small and large companies by 2023. Large companies have experienced moderate salary growth, maintaining higher salaries than small companies throughout the period but falling behind medium companies in the latter years. Small companies show a relatively flat trend, with minor fluctuations and the lowest salaries across the board. The shaded areas represent the variance or uncertainty in the salary projections, indicating more significant variability in large and medium companies while the small company salaries remain fairly consistent with less variance. </figcaption>
+            </figure>
+        </section>
+
+        <section id="static-visualizations">
+            <h2>Task 2: Exploring the Impact of Employment Type on Salary</h2>
+            <!-- Repeat this block for each static visualization -->
+            <figure>
+                <iframe src="bar plot.html" width="100%" height="600" style="border:none;"></iframe>
+                <figcaption><strong>Visualization takeaway:</strong>This bar chart illustrates the median and mean salaries for various experience levels. The key takeaway is that both median and mean salaries increase with experience. For mid-level experience, the median salary is $105,320, and the mean is slightly higher at $116,884.33. At the entry-level, the median salary is substantially lower at $74,540, with a mean of $84,356.37, indicating a wider distribution of entry-level salaries with some earning significantly more. For senior-level positions, the median jumps to $153,400, and the mean to $161,575.74, showing a closer distribution between the two. The executive level sees the highest salaries, with a median of $182,160 and a mean even higher at $188,840.04, suggesting that some executives earn considerably more than the median, skewing the mean upward. The consistency between the median and mean salaries across the experience levels suggests a relatively symmetrical salary distribution, particularly at the mid and senior levels.</figcaption>
+            </figure>
+        </section>
+
+        
+
+        <section id="static-visualizations">
+            <h2>Task 3: Exploring the Impact of Experience Level & Company Size on Salary</h2>
+            <!-- Repeat this block for each static visualization -->
+            <figure>
+                <iframe src="altair_box_plot.html" width="100%" height="600" style="border:none;"></iframe>
+                <figcaption><strong>Visualization takeaway:</strong>This box plot shows the salary distribution across different employment types: contract, freelance, full-time, and part-time. The key observations are:
+
+                    1. Full-time roles have the widest salary range and the highest outliers, indicating that full-time employees can achieve significantly higher earnings, likely due to a mix of senior roles and high-paying industries. The median salary for full-time positions is also higher compared to other employment types, suggesting a generally better compensation for full-time workers.
+                    
+                    2. Contract positions have a lower median salary than full-time roles, but higher than freelance and part-time. The range is narrower than full-time positions, suggesting less variability in contract work salaries.
+                    
+                    3. Freelance work shows the lowest median salary and a smaller interquartile range, indicating that freelancers generally earn less with less variability in their earnings compared to contract and full-time roles.
+                    
+                    4. Part-time work has the lowest spread of salaries, with the lowest median, and no visible outliers, which could be due to a cap on earnings associated with fewer working hours.
+                    
+                    Overall, full-time positions seem to offer the most lucrative opportunities with the potential for high earnings, while part-time roles are the least lucrative in terms of salary.</figcaption>
+            </figure>
+        </section>
+
+        <section id="interactive-visualization">
+            <h2>Task 4: Exploring the Median Salary of the Top 20 Most Common Jobs</h2>
+            <!-- Include your interactive visualizations here -->
+            <div id="interactive-vis1">
+                <h3>How to interact with this visualization?</h3>
+                <p>
+                    <ul>
+                        <li><strong>Single Experience Level Selection:</strong> Users can click on any one of the experience levels—Entry, Mid, Senior, or Executive—in the legend to isolate and view the median salary distribution for only that category across the top 20 job titles.</li>
+                        <li><strong>Multiple Experience Levels Comparison:</strong> Users have the option to select and view multiple experience levels simultaneously. This comparison allows users to observe and compare the median salaries across different experience levels for each job title.</li>
+                        <li><strong>Zoom Functionality:</strong> Users can utilize the zoom feature to take a closer or broader look at the salary data presented for the various job titles, enhancing the detail or overview as required.</li>
+                        <li><strong>Hovering Data Details:</strong> Users can view the data in detail by placing the cursor over a data point, which will display specific salary information for that job title and experience level.</li>
+                      </ul>
+                      
+                </p>
+                <iframe src="scatter plot.html" width="100%" height="600" style="border:none;"></iframe>
+            </div>
+        </section>
+
+        <section id="interactive-visualizations">
+            <h2>Task 5: Explore Salary Information by Country</h2>
+            <!-- Include your interactive visualizations here -->
+            <div id="interactive-vis1">
+                <h3>Interactive Visualization Title</h3>
+                <p>
+                    <ul>
+                        <li><strong>Hover Over Countries:</strong> Place the cursor over a country to display a tooltip with detailed descriptive statistics of jobs in that area. The tooltip includes the median salary, mean salary, standard deviation (std), minimum (min) salary, 25th percentile (25%), 75th percentile (75%), maximum (max) salary, and the count of data points (count) for the country.</li>
+                        <li><strong>Color Gradient Legend:</strong> Use the color gradient legend on the right to understand the median salary range across different countries. Countries with darker shades represent higher median salaries.</li>
+                        <li><strong>Zoom Functionality:</strong> Utilize the zoom controls to focus on a specific region or to get a broader view of global salary distributions.</li>
+                      </ul>
+                      
+                </p>
+                <iframe src="map plot.html" width="100%" height="600" style="border:none;"></iframe>
+            </div>
+        </section>
+        
+        <section id="summary">
+            <h2>Summary of Findings</h2>
+            <p><body>
+                
+                <h3><strong>Salary Trends by Company Size</strong></h3>
+                <p>Medium-sized companies are showing a substantial upward trajectory in salaries, surpassing both small and large companies. Large companies maintain higher salaries than small companies but are being overtaken by medium ones. Small companies have the least variation and the lowest salaries.</p>
+                
+                <h3><strong>Salary by Experience Level</strong></h3>
+                <p>Salaries increase with experience across job titles, with executive roles having the highest median and mean salaries. There is a relatively symmetrical distribution of salaries for mid and senior levels, suggesting a standard progression in earnings as experience increases.</p>
+                
+                <h3><strong>Salary Distribution by Employment Type</strong></h3>
+                <p>Full-time roles offer the most significant potential for high salaries and exhibit the broadest range, indicating varied compensation across different industries and job functions. Contract work provides moderately high salaries with less variability. Freelance and part-time roles generally have lower and more consistent salary distributions.</p>
+                
+                <h3><strong>Salary Distribution by Job Title and Experience Level</strong></h3>
+                <p>The visualization demonstrates that, for the 20 most common data roles, the median salary varies by job title and experience level. Notable findings include the highest median salaries for entry-level applied scientists, mid-level machine learning scientists, senior ML engineers, and executive business intelligence engineers.</p>
+                
+                <h3><strong>Global Salary Statistics</strong></h3>
+                <p>The interactive world map with descriptive statistics indicates a disparity in salaries based on geographical location. The United States appears to be the country with the highest median and mean salary for data roles in the world, showcasing significant global variations.</p>
+                
+                <h2>Findings and Learnings</h2>
+                
+                <p><strong>Findings:</strong></p>
+                <ul>
+                  <li>Medium-sized companies may be becoming competitive in their salary offerings.</li>
+                  <li>Experience level is a strong indicator of salary potential, especially for executive positions.</li>
+                  <li>Full-time employment typically offers better salary prospects compared to other types of employment.</li>
+                  <li>There is a significant geographical influence on salary distribution.</li>
+                </ul>
+                
+                <p><strong>Learnings:</strong></p>
+                <ul>
+                  <li>Interactive elements such as zooming and tooltips enhance data comprehension.</li>
+                  <li>Descriptive statistics are crucial for understanding the spread and central tendency of salaries across different segments.</li>
+                  <li>Visual representations like color gradients can effectively convey complex information, such as median salary ranges across countries.</li>
+                </ul>
+                
+                <h2>Future Directions</h2>
+                <p>Further research could focus on investigating factors contributing to salary trends, exploring variances in full-time salaries, analyzing the impact of location on salary, and developing nuanced visualizations accounting for demographic impacts on salary.</p>
+                
+                </body></p>
+        </section>
+
+        <section id="references">
+            <h2>References</h2>
+            <ul>
+                <li><a href="https://www.coursera.org/articles/data-scientist-salary">coursera data science roles research</a></li>
+                <li><a href="https://365datascience.com/career-advice/data-science-salaries-around-the-world/">data-science-salaries-around-the-world</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Project by Junhua Chen </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+

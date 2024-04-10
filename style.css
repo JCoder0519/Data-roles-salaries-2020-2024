@@ -1,0 +1,86 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap');
+
+/* Base Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Header and Footer */
+header, footer {
+    background-color: #005a87;
+    color: #fafafa;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+}
+
+/* Typography Enhancements */
+h2 {
+    color: #005a87;
+}
+
+figure, figcaption {
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-style: italic;
+    color: #666;
+}
+
+/* Links */
+a {
+    color: #ff5722;
+    transition: color 0.3s ease;
+}
+
+a:hover, a:focus {
+    color: #d84315;
+    text-decoration: underline;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
